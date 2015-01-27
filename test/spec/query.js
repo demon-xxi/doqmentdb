@@ -76,7 +76,7 @@ describe('QueryBuilder', function() {
     });
 
     it('should handle strings correctly', function() {
-      query('r.a=1 AND r.b=2').should.eql(BQ + 'r.a=1 AND r.b=2');
+      query(BQ + 'r.a=1 AND r.b=2').should.eql(BQ + 'r.a=1 AND r.b=2');
     });
 
     it('should work with functions', function() {
